@@ -1,0 +1,141 @@
+body { 
+  background: url(../img/bg_fade.jpg) no-repeat 5% center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  min-width: 920px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.outer {
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.launch_card {
+  color: #333;
+}
+
+.pusher {
+  display: inline-block;
+  width: 46%;
+  min-width: 400px;
+}
+
+.wrapper {
+  display: inline-block;
+}
+
+.content {
+  width: 420px;
+  margin-top: 25px;
+  margin-left: 32px;
+
+  white-space: normal;
+}
+
+.content p,
+.content h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: lighter;
+
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.content p {
+  font-size: 22px;
+}
+
+.content h1 {
+  width: 390px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+.content .info_text {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#subscribe-wrapper {
+  width: 390px;
+  margin-top: 20px;
+}
+
+.content .form .form-control {
+  margin-bottom: 12px;
+}
+
+#success, #failure {
+  display: none;
+}
+
+#button {
+  display: inline-block;
+  background: #de3a2a;
+  border: none;
+  border-bottom: 3px solid #ab0700;
+  color: #fff;
+  font-size: 17px;
+  padding: 15px 20px 13px;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#button:hover {
+  background: #ff6d5d;
+}
+
+#button:active,
+#button:focus {
+  background: #c52111;
+  border-bottom: none;
+  margin-top: 13px;
+  outline: none;
+}
+
+#countdown .digit_label {
+  position: absolute;
+  margin-top: 54px;
+  margin-left: -63px;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+@media(max-width:992px){
+  .inner {
+    text-align: center;
+  }
+
+  .wrapper {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  .content {
+    width: 400px;
+  }
+}
+

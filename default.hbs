@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  {{! Favicon }}
+  <link rel="shortcut icon" href="{{asset "/favicon.ico"}}" type="image/x-icon">
+  <link rel="icon" href="{{asset "/favicon.ico"}}" type="image/x-icon">
+
+  {{! Styles'n'Scripts }}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/bootstrap.css"}}" />
+  <link rel="stylesheet" href="{{asset "css/font-awesome.css"}}">
+  <link rel="stylesheet" type="text/css" href="{{asset "css/jquery.countdown.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+
+  {{! Google Fonts }}
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+
+  <!--[if lt IE 9]>
+      <script type="text/javascript" src={{asset "js/html5shiv.min.js"}}"></script>
+      <script type="text/javascript" src={{asset "js/respond.min.js"}}"></script>
+  <![endif]-->
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  {{{body}}}
+
+  {{! Ghost outputs important scripts and data with this tag }}
+  {{ghost_foot}}
+
+  {{! The main JavaScript file for Casper }}
+  <script type="text/javascript" src="{{asset "js/bootstrap.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/modernizr-custom.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/js-webshim/minified/polyfiller.js"}}"></script>
+  <script>
+    webshim.polyfill('forms');
+  </script>
+  <script type="text/javascript" src="{{asset "js/jquery.countdown.js"}}"></script>
+  <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
+</body>
+</html>
